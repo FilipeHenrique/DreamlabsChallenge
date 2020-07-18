@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Post } from './posts.model';
-import { DataService } from './data.service';
+// import { Post } from './posts.model';
+// import { DataService } from './data.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -8,13 +9,14 @@ import { DataService } from './data.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  posts$: Post[];
-
-  constructor(private dataService: DataService) {}
+  
+  constructor(private router:Router) {}
 
   ngOnInit() {
-      return this.dataService.getPosts()
-        .subscribe(data => this.posts$ =data);
+    this.router.navigate(['index']);
   }
 
+  goToPage(pageName:string):void {
+    this.router.navigate([`${pageName}`]);
+  }
 }

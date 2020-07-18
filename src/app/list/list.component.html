@@ -1,0 +1,12 @@
+<nav class="navbar">
+    <h3 class="nav-content">Desafio Dreamlabs</h3>
+  </nav>
+  
+  <div *ngFor= 'let post of posts$' class="posts-box">
+    <div class="card"  (click)="goToPage('Post')">
+      <h2 class="id">{{post.id}}.</h2>
+      <h2 class="title">{{post.title}}</h2>
+      <p>{{post.body}}</p>
+    </div>
+  </div>
+  
