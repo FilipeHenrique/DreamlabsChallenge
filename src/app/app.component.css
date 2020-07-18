@@ -1,0 +1,60 @@
+
+  .navbar{
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: #44475a;
+  }
+
+  .nav-content {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 0.4rem;
+  }
+
+  .posts-box{
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: #282a36;
+  }
+
+  .card {
+    background-color: #44475a;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.137);
+  }
+
+  .card:hover {
+    transform: scale(1.1);
+  }
+
+  h2 {
+    color: #50fa7b;
+    font-size: 1.5rem;
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+
+  .title {
+    text-transform: uppercase;
+  }
+  
+  p {
+    text-align: left;
+    font-size: 1em;
+    color: #f8f8f2;
+  }
+
+  h3 {
+    font-size: 2rem;
+    color: #ff79c6
+  }
+
+  .id{
+    color: #ff79c6;
+  }
